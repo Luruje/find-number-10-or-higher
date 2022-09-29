@@ -1,3 +1,5 @@
+package utils;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.List;
@@ -15,7 +17,6 @@ public class Helper {
         lines.stream()
                 .filter(this::containsNumberGreaterThan10)
                 .forEach(System.out::println);
-
     }
 
     List<String> readLinesFromFile(String fileName) {
